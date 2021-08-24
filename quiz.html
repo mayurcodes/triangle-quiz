@@ -6,85 +6,111 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>quiz on triangle</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <link href="style.css" rel="stylesheet">
 </head>
 
 <body>
-    <h1>Triangle Quiz</h1>
-    <form id="quiz-form">
-        <div class="container">
-            <p>1. If a triangle has angles 135°, 15°, 30°. Is it an obtuse triangle?</p>
-            <input type="radio" name="question1" value="yes">
-            <label for="question1">yes</label>
-            <input type="radio" name="question1" value="no">
-            <label for="question1">no</label>
-        </div>
-        <div class="container">
-            <p>2. If a triangle has angles 115°, 25°, 40°. Is it an acute triangle?</p>
-            <input type="radio" name="question2" value="yes">
-            <label for="question2">yes</label>
-            <input type="radio" name="question2" value="no">
-            <label for="question2">no</label>
-        </div>
-        <div class="container">
-            <p>3. If a triangle has angles 90°, 60°, 30°. Is it a right angle triangle?</p>
-            <input type="radio" name="question3" value="yes">
-            <label for="question3">yes</label>
-            <input type="radio" name="question3" value="no">
-            <label for="question3">no</label>
-        </div>
-        <div class="container">
-            <p>4. What is the third angle for the triangle, where first angle=55° and second angle=45°?</p>
-            <input type="radio" name="question4" value="60°">
-            <label for="question4">60°</label>
-            <input type="radio" name="question4" value="80°">
-            <label for="question4">80°</label>
-            <input type="radio" name="question4" value="50°">
-            <label for="question4">50°</label>
-        </div>
-        <div class="container">
-            <p>5. If a triangle has 2 sides with equal lengths and 75° angle between them. What is the type of triangle?
-            </p>
-            <input type="radio" name="question5" value="Right Angle traingle">
-            <label for="question5">Right Angle traingle</label>
-            <input type="radio" name="question5" value="Isosceles">
-            <label for="question5">Isosceles</label>
-            <input type="radio" name="question5" value="Equilateral">
-            <label for="question5">Equilateral</label>
-        </div>
-        <div class="container">
-            <p>6. If a triangle has sides of 2cm, 3cm, 4cm, what is the type of triangle?</p>
-            <input type="radio" name="question6" value="Scalene">
-            <label for="question6">Scalene</label>
-            <input type="radio" name="question6" value="Equilateral">
-            <label for="question6">Equilateral</label>
-            <input type="radio" name="question6" value="Isosceles">
-            <label for="question6">Isosceles</label>
-        </div>
-        <div class="container">
-            <p>7. If a triangle has 2 sides with equal lengths and 60° angle between them. What is the type of triangle?
-            </p>
-            <input type="radio" name="question7" value="Isosceles">
-            <label for="question7">Isosceles</label>
-            <input type="radio" name="question7" value="Equilateral">
-            <label for="question7">Equilateral</label>
-            <input type="radio" name="question7" value="Both">
-            <label for="question7">Both</label>
-        </div>
-        <div class="container">
-            <p>8. The perimeter of an equilateral triangle is 15cm. What is the length of one side?</p>
-            <input type="radio" name="question8" value="45cm">
-            <label for="question8">45cm</label>
-            <input type="radio" name="question8" value="15cm">
-            <label for="question8">15cm</label>
-            <input type="radio" name="question8" value="5cm">
-            <label for="question8">5cm</label>
-        </div>
-        <input id="input-btn" type="button" value="submit" />
-    </form>
-    <div id="div-output"></div>
+    <nav class="navigation">
+        <h1>Fun with Triangles</h1>
+        <a class="link li-home" href="/">Home</a>
+    </nav>
+    <div class="container-center">
+        <h2>Triangle Quiz</h2>
+        <form id="quiz-form" onsubmit="return false">
+            <div class="container color-container">
+                <p>1. If a triangle has angles 135°, 15°, 30°. Is it an obtuse triangle?</p>
+                <input class="quiz-input" type="radio" name="question1" value="yes" required />
+                <label class="quiz-label" for="question1">yes</label>
+                <input class="quiz-input" type="radio" name="question1" value="no" />
+                <label class="quiz-label" for="question1">no</label>
+            </div>
+            <div class="container color-container">
+                <p>2. If a triangle has angles 115°, 25°, 40°. Is it an acute triangle?</p>
+                <input class="quiz-input" type="radio" name="question2" value="yes" required />
+                <label class="quiz-label" for="question2">yes</label>
+                <input class="quiz-input" type="radio" name="question2" value="no" />
+                <label class="quiz-label" for="question2">no</label>
+            </div>
+            <div class="container color-container">
+                <p>3. If a triangle has angles 90°, 60°, 30°. Is it a right angle triangle?</p>
+                <input class="quiz-input" type="radio" name="question3" value="yes" required />
+                <label class="quiz-label" for="question3">yes</label>
+                <input class="quiz-input" type="radio" name="question3" value="no" />
+                <label class="quiz-label" for="question3">no</label>
+            </div>
+            <div class="container color-container">
+                <p>4. What is the third angle for the triangle, where first angle=55° and second angle=45°?</p>
+                <input class="quiz-input" type="radio" name="question4" value="60°" required />
+                <label class="quiz-label" for="question4">60°</label>
+                <input class="quiz-input" type="radio" name="question4" value="80°" />
+                <label class="quiz-label" for="question4">80°</label>
+                <input class="quiz-input" type="radio" name="question4" value="50°" />
+                <label class="quiz-label" for="question4">50°</label>
+            </div>
+            <div class="container color-container">
+                <p>5. If a triangle has 2 sides with equal lengths and 75° angle between them. What is the type of
+                    triangle?
+                </p>
+                <input class="quiz-input" type="radio" name="question5" value="Right Angle traingle" required />
+                <label class="quiz-label" for="question5">Right Angle traingle</label>
+                <input class="quiz-input" type="radio" name="question5" value="Isosceles" />
+                <label class="quiz-label" for="question5">Isosceles</label>
+                <input class="quiz-input" type="radio" name="question5" value="Equilateral" />
+                <label class="quiz-label" for="question5">Equilateral</label>
+            </div>
+            <div class="container color-container">
+                <p>6. If a triangle has sides of 2cm, 3cm, 4cm, what is the type of triangle?</p>
+                <input class="quiz-input" type="radio" name="question6" value="Scalene" required />
+                <label class="quiz-label" for="question6">Scalene</label>
+                <input class="quiz-input" type="radio" name="question6" value="Equilateral" />
+                <label class="quiz-label" for="question6">Equilateral</label>
+                <input class="quiz-input" type="radio" name="question6" value="Isosceles" />
+                <label class="quiz-label" for="question6">Isosceles</label>
+            </div>
+            <div class="container color-container">
+                <p>7. If a triangle has 2 sides with equal lengths and 60° angle between them. What is the type of
+                    triangle?
+                </p>
+                <input class="quiz-input" type="radio" name="question7" value="Isosceles" required />
+                <label class="quiz-label" for="question7">Isosceles</label>
+                <input class="quiz-input" type="radio" name="question7" value="Equilateral" />
+                <label class="quiz-label" for="question7">Equilateral</label>
+                <input class="quiz-input" type="radio" name="question7" value="Both" />
+                <label class="quiz-label" for="question7">Both</label>
+            </div>
+            <div class="container color-container">
+                <p>8. The perimeter of an equilateral triangle is 15cm. What is the length of one side?</p>
+                <input class="quiz-input" type="radio" name="question8" value="45cm" required />
+                <label class="quiz-label" for="question8">45cm</label>
+                <input class="quiz-input" type="radio" name="question8" value="15cm" />
+                <label class="quiz-label" for="question8">15cm</label>
+                <input class="quiz-input" type="radio" name="question8" value="5cm" />
+                <label class="quiz-label" for="question8">5cm</label>
+            </div>
+                <button id="btn-input">submit</button>
+        </form>
+        <div id="div-output"></div>
+    </div>
 
-
+    <footer class="footer">
+        <div class="footer-header">Get in touch 👇</div>
+        <ul class="social-links list-non-bullet">
+            <li class="list-item-inline">
+                <a class="link fa fa-github" href="https://github.com/mayurcodes"></a>
+            </li>
+            <li class="list-item-inline">
+                <a class="link fa fa-twitter" href="https://twitter.com/login?lang=en"></a>
+            </li>
+            <li class="list-item-inline">
+                <a class="link fa fa-linkedin" href="https://www.linkedin.com/login"></a>
+            </li>
+        </ul>
+        <p class="copyright">
+            &copy; | 2021 | all rights reserved.
+        </p>
+    </footer>
 
     <script type="text/javascript" src="quiz.js"></script>
 </body>

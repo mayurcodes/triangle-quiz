@@ -5,10 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hypotenuse of a triangle</title>
+    <title>check Triangle</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <link rel="stylesheet" href="style.css">
+    <link href="style.css" rel="stylesheet">
 </head>
 
 <body>
@@ -17,12 +17,15 @@
         <a class="link li-home" href="/">Home</a>
     </nav>
     <div class="container-center">
-        <h2>Let's calculate hypotenuse of a triangle..</h2>
-        <label for="first_side">FirstSide</label>
-        <input type="number" class="sides" />
-        <label for="second_side">SecondSide</label>
-        <input type="number" class="sides" />
-        <button id="btn-calculate">Calculate</button>
+        <h2>Put 3 angles to check if it is triangle..</h2>
+        <label for="firstAngle">First Angle</label>
+        <input type="number" class="input-angle" />
+        <label for="secondAngle">Second Angle</label>
+        <input type="number" class="input-angle" />
+        <label for="thirdAngle">Third Angle</label>
+        <input type="number" class="input-angle" />
+
+        <button id="btn-check">check</button>
         <div id="div-output"></div>
     </div>
 
@@ -44,7 +47,7 @@
         </p>
     </footer>
 
-    <script src="hypotenuse.js" type="text/javascript"></script>
+    <script type="text/javascript" src="checkTriangle.js"></script>
 </body>
 
 </html>

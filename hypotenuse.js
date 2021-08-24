@@ -8,9 +8,15 @@ function calculateSquareOfSides(sideOne, sideTwo) {
 }
 
 function calculateHypotenuse() {
-    var hypotenuse = calculateSquareOfSides(Number(sideInput[0].value), Number(sideInput[1].value));
+    var sideOne = Number(sideInput[0].value);
+    var sideTwo = Number(sideInput[1].value);
 
-    output.innerText = "Hypotenuse of a triangle is : " + hypotenuse;
+    if (sideOne > 0 && sideTwo > 0) {
+        var hypotenuse = calculateSquareOfSides(sideOne, sideTwo);
+        output.innerText = "Hypotenuse of a triangle is " + hypotenuse;
+    } else {
+        output.innerText = "Please enter valid lengths in above fields..";
+    }
 
 }
 
