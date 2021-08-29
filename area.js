@@ -8,9 +8,11 @@ function calculateArea() {
 
     if(base > 0 && height > 0){
     var area = 1 / 2 * (base * height);
+    output.style.color = "green";
     output.innerText = "Area of a triangle is : " + area;
     }
     else{
+        output.style.color = "red";
         output.innerText = "Please enter valid lengths in above fields..";
     }
 }

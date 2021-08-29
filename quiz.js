@@ -23,8 +23,10 @@ function clickHandler() {
     btnInput.style.display = "none";
     
     if (score == 8) {
+        outputDiv.style.color = "green";
         outputDiv.innerText = "Congratulations!!  you got all answers correct..\r\n Your score is  " + score;
     } else {
+        outputDiv.style.color = "green";
         outputDiv.innerText = "Your score is  " + score;
     }
 

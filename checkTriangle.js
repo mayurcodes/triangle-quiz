@@ -10,11 +10,14 @@ function clickEventHandler() {
 
     if (first_angle > 0 && second_angle > 0 && third_angle > 0) {
         if (sumOfAngles === 180) {
+            outputDiv.style.color = "green";
             outputDiv.innerText = "Given 3 angles can make a triangle..✌";
         } else {
+            outputDiv.style.color = "red";
             outputDiv.innerText = "Given 3 angles can't make a triangle.. \r\n To make a triangle sum of all angles should be 180°";
         }
     } else {
+        outputDiv.style.color = "red";
         outputDiv.innerText = "Please enter valid angles in above fields..";
     }
 }

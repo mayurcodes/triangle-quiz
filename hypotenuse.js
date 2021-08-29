@@ -13,8 +13,10 @@ function calculateHypotenuse() {
 
     if (sideOne > 0 && sideTwo > 0) {
         var hypotenuse = calculateSquareOfSides(sideOne, sideTwo);
+        output.style.color = "green";
         output.innerText = "Hypotenuse of a triangle is " + hypotenuse;
     } else {
+        output.style.color = "red";
         output.innerText = "Please enter valid lengths in above fields..";
     }
 
